@@ -1,0 +1,12 @@
+function addToWishlist(name, image) {
+    let wishlistItems = JSON.parse(localStorage.getItem('wishlistItems')) || [];
+
+    const existingItemIndex = wishlistItems.findIndex(item => item.name === name);
+    if (existingItemIndex === -1) {
+        wishlistItems.push({ name, image });
+        localStorage.setItem('wishlistItems', JSON.stringify(wishlistItems));
+        alert(`${name} has been added to the wishlist`);
+    } else {
+        alert(`${name} is already in your wishlist`);
+    }
+}

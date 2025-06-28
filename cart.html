@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="View and manage your cart items.">
+    <title>Cart - E-Commerce</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="signup.html">Sign Up</a></li>
+                <li><a href="cart.html">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Your Cart</h1>
+        <section id="cart-items">
+            <table id="cart-table">
+                <tr>
+                    <th>Product</th>
+                    <th>Price</th>
+                    <th>Quantity</th>
+                    <th>Total</th>
+                </tr>
+                <!-- Cart items will be dynamically inserted here -->
+            </table>
+            <div class="cart-total">
+                <h2>Total: $<span id="cart-total">0.00</span></h2>
+                <button onclick="checkout()">Checkout</button>
+            </div>
+        </section>
+    </main><center>
+    <footer>
+        <p>&copy; 2024 E-Commerce. All rights reserved.</p>
+    </footer></center>
+<script src="ScriptCart.js"></script>
+    <script src="scripts2.js"></script>
+</body>
+</html>
